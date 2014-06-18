@@ -7,11 +7,32 @@
 //
 
 #import "APAppDelegate.h"
+#import "APDeck.h"
 
 @implementation APAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    APDeck *deck = [[APDeck alloc] init];
+    APCard *card1 = [deck deal];
+    APCard *card2 = [deck deal];
+    NSLog(@"card1 = %@", [card1 stringRepresentation]);
+    NSLog(@"card2 = %@", [card2 stringRepresentation]);
+    NSLog(@"deck remain cards count = %d", [deck.cards count]);
+    NSLog(@"does deck contain card1? %d", [deck.cards containsObject:card1]);
+    NSLog(@"does deck contain card2? %d", [deck.cards containsObject:card2]);
+    
+    [deck shuffle];
+    APCard *card3 = [deck deal];
+    APCard *card4 = [deck deal];
+    NSLog(@"card3 = %@", [card3 stringRepresentation]);
+    NSLog(@"card4 = %@", [card4 stringRepresentation]);
+    NSLog(@"deck remain cards count = %d", [deck.cards count]);
+    NSLog(@"does deck contain card3? %d", [deck.cards containsObject:card3]);
+    NSLog(@"does deck contain card4? %d", [deck.cards containsObject:card4]);
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];

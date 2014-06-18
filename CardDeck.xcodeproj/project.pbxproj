@@ -19,6 +19,8 @@
 		D493A9C21950A4030067B217 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D493A9AA1950A4020067B217 /* UIKit.framework */; };
 		D493A9CA1950A4030067B217 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D493A9C81950A4030067B217 /* InfoPlist.strings */; };
 		D493A9CC1950A4030067B217 /* CardDeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D493A9CB1950A4030067B217 /* CardDeckTests.m */; };
+		D493A9D71950D44E0067B217 /* APCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D493A9D61950D44E0067B217 /* APCard.m */; };
+		D493A9DA1950F5950067B217 /* APDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = D493A9D91950F5950067B217 /* APDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		D493A9C71950A4030067B217 /* CardDeckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CardDeckTests-Info.plist"; sourceTree = "<group>"; };
 		D493A9C91950A4030067B217 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D493A9CB1950A4030067B217 /* CardDeckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardDeckTests.m; sourceTree = "<group>"; };
+		D493A9D51950D44E0067B217 /* APCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCard.h; sourceTree = "<group>"; };
+		D493A9D61950D44E0067B217 /* APCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCard.m; sourceTree = "<group>"; };
+		D493A9D81950F5950067B217 /* APDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APDeck.h; sourceTree = "<group>"; };
+		D493A9D91950F5950067B217 /* APDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,10 @@
 				D493A9B61950A4020067B217 /* APAppDelegate.m */,
 				D493A9B81950A4020067B217 /* Images.xcassets */,
 				D493A9AD1950A4020067B217 /* Supporting Files */,
+				D493A9D51950D44E0067B217 /* APCard.h */,
+				D493A9D61950D44E0067B217 /* APCard.m */,
+				D493A9D81950F5950067B217 /* APDeck.h */,
+				D493A9D91950F5950067B217 /* APDeck.m */,
 			);
 			path = CardDeck;
 			sourceTree = "<group>";
@@ -241,7 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D493A9B31950A4020067B217 /* main.m in Sources */,
+				D493A9D71950D44E0067B217 /* APCard.m in Sources */,
 				D493A9B71950A4020067B217 /* APAppDelegate.m in Sources */,
+				D493A9DA1950F5950067B217 /* APDeck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
